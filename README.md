@@ -168,7 +168,7 @@ PENYIMPANANXX/ (Root Directory)
 # 🔐 7. Kredensial & Autentikasi Admin
 ```
 Username: 🧑‍💻 admin
-Password: 🔑 admin123
+Password: 🔑 admin
 ```
 # 🔌 8. Pemetaan Endpoint API
 Base URL 
@@ -181,3 +181,28 @@ Data Master (Items, Categories, Suppliers): 📋
 GET (Semua / Detail) ➔ 🔓 Akses Publik (Tanpa Token)
 POST / PUT / DELETE ➔ 🔒 Akses Terproteksi (Wajib Bearer Token)
 ```
+# 🛡️ 9. Alur Keamanan Sistem
+Login: Admin masuk via /login ➔ Server menerbitkan token unik.
+
+Sesi: Token disimpan di 📥 localStorage sisi client.
+
+Injeksi Otomatis: 🤖 Axios Interceptor menyisipkan token ke setiap Header Request (Authorization: Bearer <token>).
+
+Proteksi Navigasi: 🚪 Vue Router Navigation Guard mencegat user tanpa token yang mencoba masuk ke halaman admin.
+
+Gagal Akses: Request manipulasi data tanpa token otomatis menghasilkan error 🚫 401 Unauthorized.
+
+# 🖼️ 10. Antarmuka Aplikasi (UI)
+🔐 Halaman Log In
+
+📊 Dashboard Admin
+
+📦 Tabel Manajemen Barang
+
+➕ / ✏️ Modal Tambah & Edit Data
+
+## Halaman Login
+<img width="959" height="473" alt="image" src="https://github.com/user-attachments/assets/f6db308d-33e0-4694-b6af-cee9b112606c" />
+## Dashboard
+<img width="959" height="473" alt="image" src="https://github.com/user-attachments/assets/7528e1dc-4051-4c6d-a4aa-7467564e24cd" />
+
