@@ -222,8 +222,7 @@ Backend: 🚀 Jalankan perintah cd backend-api lalu php spark serve --port 8080.
 Frontend: 🌐 Akses berkas index.html langsung via path localhost XAMPP di browser kamu.
 ```
 # 10. Dokumentasi Pendukung
-```
-Link Hosting: 🌍  https://errors.infinityfree.net/errors/403/
 
-Link Youtube: 🎬  https://youtu.be/D1e6IXLayj4?si=xLWsSdPaCwypgaqU
-```
+## Link Hosting: 🌍  https://errors.infinityfree.net/errors/403/
+
+## Link Youtube: 🎬  https://youtu.be/D1e6IXLayj4?si=xLWsSdPaCwypgaqU
