@@ -14,3 +14,22 @@ Arsitektur yang digunakan adalah Decoupled Architecture, memisahkan backend dan 
 Backend: Menggunakan CodeIgniter 4 sebagai penyedia RESTful API.
 
 Frontend: Menggunakan VueJS 3 (CDN), Vue Router, Axios, dan TailwindCSS untuk membangun antarmuka Single Page Application (SPA).
+
+# Tema Studi Kasus
+Tema: Sistem Manajemen Inventaris Barang (E-Inventory) dengan saya kasih nama PeyimpananXX
+
+Cakupan & Fitur Utama Aplikasi:
+
+- Login administrator
+- Logout administrator
+- Dashboard admin
+- Menampilkan data barang
+- Menambahkan data barang
+- Mengedit data barang
+- Menghapus data barang
+- Menampilkan data kategori
+- Menampilkan data supplier
+- Proteksi endpoint API menggunakan Bearer Token
+- Validasi akses halaman menggunakan Vue Router Navigation Guard
+- Penyimpanan token login menggunakan localStorage
+- Pengiriman token otomatis menggunakan Axios Interceptor
