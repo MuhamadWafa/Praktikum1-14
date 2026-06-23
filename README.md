@@ -126,7 +126,7 @@ PENYIMPANANXX/ (Root Directory)
 ```
 # 🛢️ 6. Arsitektur Database & Relasi
 
-```
+```python
 ├── e-inventory (Database)
 │   ├── users (Tabel Data Pengguna/Admin)
 │   │   ├── id (INT, Primary Key, Auto Increment)
@@ -246,7 +246,7 @@ Frontend: 🌐 Akses berkas index.html langsung via path localhost XAMPP di brow
     e-inventory
     ```
 - impor atau jalankan sql
-  python```
+ ```python
   CREATE DATABASE IF NOT EXISTS e-inventory;
 USE e-inventory;
 
@@ -300,7 +300,6 @@ tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (id),
 CONSTRAINT fk_histori_barang FOREIGN KEY (barang_id) REFERENCES barang (id) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 ```
 # 🏁 1. Kesimpulan & Status Proyek
 ```
