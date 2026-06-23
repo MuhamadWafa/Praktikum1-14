@@ -33,3 +33,28 @@ Cakupan & Fitur Utama Aplikasi:
 - Validasi akses halaman menggunakan Vue Router Navigation Guard
 - Penyimpanan token login menggunakan localStorage
 - Pengiriman token otomatis menggunakan Axios Interceptor
+
+# Teknologi yang di gunakan
+Backend
+- PHP 8.2
+- CodeIgniter 4
+- RESTful API
+- MySQL / MariaDB
+- CodeIgniter Filter
+- Bearer Token Authentication
+- CORS Filter
+- Frontend
+HTML
+- VueJS 3 CDN
+- Vue Router CDN
+- Axios CDN
+- TailwindCSS CDN
+- JavaScript Modular Component
+Tools
+XAMPP
+- phpMyAdmin
+- Visual Studio Code
+- Browser
+- PowerShell / CMD
+- Git dan GitHub
+
