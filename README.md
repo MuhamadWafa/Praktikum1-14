@@ -57,4 +57,16 @@ XAMPP
 - Browser
 - PowerShell / CMD
 - Git dan GitHub
-
+# 4. Arsitekur Aplikasi
+Aplikasi ini menggunakan arsitektur terpisah antara backend dan frontend
+```
+Frontend VueJS SPA
+        |
+        | Axios HTTP Request
+        |
+Backend CodeIgniter 4 RESTful API
+        |
+        | Query Database
+        |
+Database MySQL / MariaDB
+```
