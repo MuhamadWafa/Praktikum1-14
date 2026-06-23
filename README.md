@@ -127,7 +127,7 @@ PENYIMPANANXX/ (Root Directory)
 # 🛢️ 6. Arsitektur Database & Relasi
 
 ```
-├── uas_web2_inventory (Database)
+├── e-inventory (Database)
 │   ├── users (Tabel Data Pengguna/Admin)
 │   │   ├── id (INT, Primary Key, Auto Increment)
 │   │   ├── username (VARCHAR)
@@ -164,4 +164,20 @@ PENYIMPANANXX/ (Root Directory)
 │       ├── jumlah (INT)
 │       ├── keterangan (TEXT)
 │       └── tanggal (TIMESTAMP)
+```
+# 🔐 7. Kredensial & Autentikasi Admin
+```
+Username: 🧑‍💻 admin
+Password: 🔑 admin123
+```
+# 🔌 8. Pemetaan Endpoint API
+Base URL 
+```
+http://localhost:8080
+```
+
+Data Master (Items, Categories, Suppliers): 📋
+```
+GET (Semua / Detail) ➔ 🔓 Akses Publik (Tanpa Token)
+POST / PUT / DELETE ➔ 🔒 Akses Terproteksi (Wajib Bearer Token)
 ```
