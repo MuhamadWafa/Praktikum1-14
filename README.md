@@ -125,3 +125,43 @@ PENYIMPANANXX/ (Root Directory)
 └── 📄 README.md                     # Dokumentasi Utama Proyek
 ```
 # 🛢️ 6. Arsitektur Database & Relasi
+
+```
+├── uas_web2_inventory (Database)
+│   ├── users (Tabel Data Pengguna/Admin)
+│   │   ├── id (INT, Primary Key, Auto Increment)
+│   │   ├── username (VARCHAR)
+│   │   ├── password (VARCHAR)
+│   │   ├── token (VARCHAR, Nullable)
+│   │   └── created_at (TIMESTAMP)
+│   │
+│   ├── kategori (Tabel Kategori Barang)
+│   │   ├── id (INT, Primary Key, Auto Increment)
+│   │   ├── nama_kategori (VARCHAR)
+│   │   └── created_at (TIMESTAMP)
+│   │
+│   ├── supplier (Tabel Pemasok Barang)
+│   │   ├── id (INT, Primary Key, Auto Increment)
+│   │   ├── nama_supplier (VARCHAR)
+│   │   ├── kontak (VARCHAR)
+│   │   ├── alamat (TEXT)
+│   │   └── created_at (TIMESTAMP)
+│   │
+│   ├── barang (Tabel Data Inventaris Barang)
+│   │   ├── id (INT, Primary Key, Auto Increment)
+│   │   ├── kategori_id (INT, Foreign Key -> kategori.id)
+│   │   ├── supplier_id (INT, Foreign Key -> supplier.id)
+│   │   ├── user_id (INT, Foreign Key -> users.id)
+│   │   ├── kode_barang (VARCHAR)
+│   │   ├── nama_barang (VARCHAR)
+│   │   ├── stok (INT)
+│   │   └── harga (INT)
+│   │
+│   └── histori_stok (Tabel Riwayat Transaksi Stok)
+│       ├── id (INT, Primary Key, Auto Increment)
+│       ├── barang_id (INT, Foreign Key -> barang.id)
+│       ├── jenis_transaksi (ENUM: 'masuk', 'keluar')
+│       ├── jumlah (INT)
+│       ├── keterangan (TEXT)
+│       └── tanggal (TIMESTAMP)
+```
