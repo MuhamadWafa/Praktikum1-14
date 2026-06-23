@@ -126,7 +126,7 @@ PENYIMPANANXX/ (Root Directory)
 ```
 # 🛢️ 6. Arsitektur Database & Relasi
 
-```python
+```
 ├── e-inventory (Database)
 │   ├── users (Tabel Data Pengguna/Admin)
 │   │   ├── id (INT, Primary Key, Auto Increment)
@@ -300,6 +300,23 @@ tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (id),
 CONSTRAINT fk_histori_barang FOREIGN KEY (barang_id) REFERENCES barang (id) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+```
+## C MENJALANKAN BACKEND
+Masuk ke folder backend:
+```
+cd C:\xampp\htdocs\Peyimpananxx\backend-api
+```
+Jalankan server CodeIgniter 4:
+```
+php spark serve --port 8080
+```
+Jika berhasil, akan muncul:
+```
+CodeIgniter development server started on http://localhost:8080
+```
+Cek endpoint:
+```
+http://localhost:8080/items
 ```
 # 🏁 1. Kesimpulan & Status Proyek
 ```
