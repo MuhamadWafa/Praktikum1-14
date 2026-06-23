@@ -410,9 +410,15 @@ Status: ✅ Selesai (100%)
 ```
 Kesimpulan: Proyek ini berhasil mengimplementasikan Decoupled Architecture secara optimal. CodeIgniter 4 sukses berperan sebagai penyaji RESTful API yang aman, sementara VueJS 3 (CDN) bersama TailwindCSS mampu menghadirkan aplikasi satu halaman (SPA) yang cepat, responsif, dan interaktif.
 # Tampilan Aplikasi
+
 ### login
+
 <img width="959" height="473" alt="Screenshot 2026-06-24 010432" src="https://github.com/user-attachments/assets/11e50e23-f47d-47c0-9429-fdf79b74a053" />
+
 ### dashboard
+
 <img width="959" height="473" alt="Screenshot 2026-06-24 010628" src="https://github.com/user-attachments/assets/1244b436-61bf-48d3-836f-20cf705fe437" />
+
 ### Tambah barang
+
 <img width="959" height="479" alt="Screenshot 2026-06-24 013029" src="https://github.com/user-attachments/assets/1bcc5a23-30f7-4830-83a0-ceeb1034497d" />
