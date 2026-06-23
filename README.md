@@ -206,3 +206,24 @@ Gagal Akses: Request manipulasi data tanpa token otomatis menghasilkan error �
 ## Dashboard
 <img width="959" height="473" alt="image" src="https://github.com/user-attachments/assets/7528e1dc-4051-4c6d-a4aa-7467564e24cd" />
 
+# 👥 11. Hak Akses Pengguna (Privat vs Publik)
+Pengunjung (Public): 🔓 Hanya bisa melihat Beranda dan halaman Login.
+
+Administrator: 🔒 Akses penuh ke Dashboard, kontrol CRUD Barang, dan Logout.
+
+# ⚡ 12. Panduan Singkat Instalasi & Menjalankan Proyek
+```
+Database: 🏛️ Aktifkan XAMPP (Apache & MySQL) ➔ Buat database uas_web2_inventory ➔ Import struktur tabel & data awal (termasuk enkripsi password admin).
+
+Konfigurasi: ⚙️ Sesuaikan berkas .env pada folder backend-api (set nama DB, username root, dan password kosong).
+
+Backend: 🚀 Jalankan perintah cd backend-api lalu php spark serve --port 8080.
+
+Frontend: 🌐 Akses berkas index.html langsung via path localhost XAMPP di browser kamu.
+```
+# 10. Dokumentasi Pendukung
+```
+Link Hosting: 🌍  https://errors.infinityfree.net/errors/403/
+
+Link Youtube: 🎬  https://youtu.be/D1e6IXLayj4?si=xLWsSdPaCwypgaqU
+```
