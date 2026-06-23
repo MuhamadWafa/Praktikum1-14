@@ -79,3 +79,49 @@ Frontend : 🖥️
 ```
 http://localhost:8080/frontend-spa/#/login
 ```
+# 📂 5. Struktur Direktori Proyek
+```
+PENYIMPANANXX/ (Root Directory)
+├── 🗄️ backend-api/                  # Server RESTful API (CodeIgniter 4)
+│   ├── 📁 app/
+│   │   ├── ⚙️ Config/
+│   │   ├── 🎮 Controllers/
+│   │   ├── 🛢️ Database/
+│   │   ├── 🛡️ Filters/
+│   │   ├── 🛠️ Helpers/
+│   │   ├── 🗣️ Language/
+│   │   ├── 📚 Libraries/
+│   │   ├── 📊 Models/
+│   │   ├── 📦 ThirdParty/
+│   │   └── 🎨 Views/
+│   ├── 🌐 public/                   # Folder Publik Akses Server
+│   │   ├── 🎨 frontend-spa/          # Build/Salinan Frontend di Sisi Public Server
+│   │   │   ├── 🖼️ views/
+│   │   │   │   ├── 📄 Barang.js
+│   │   │   │   ├── 📄 Dashboard.js
+│   │   │   │   └── 📄 Login.js
+│   │   │   └── 🌐 index.html
+│   │   ├── 🛠️ .htaccess
+│   │   ├── 🌟 favicon.ico
+│   │   ├── ⚙️ index.php
+│   │   └── 🤖 robots.txt
+│   ├── ⚙️ system/                     # Core Framework CodeIgniter 4
+│   ├── 🧪 tests/                      # Pengujian Aplikasi
+│   ├── 📝 writable/                   # Folder Cache & Logs Server
+│   ├── ⚙️ .env                        # Konfigurasi Environment & Database
+│   ├── 📦 composer.json               # Dependensi Backend
+│   ├── 💾 e_inventory.sql            # Backup Database MySQL
+│   ├── 📄 LICENSE
+│   ├── ⚙️ phpunit.dist.xml
+│   ├── 🚀 preload.php
+│   ├── 📄 README.md
+│   └── ⚡ spark                        # CLI CodeIgniter 4
+│
+├── 🎨 frontend-spa/                 # Aplikasi Utama Frontend (VueJS 3 SPA)
+│   ├── 📁 components/
+│   └── 🌐 index.html
+│
+├── 🛠️ .htaccess
+└── 📄 README.md                     # Dokumentasi Utama Proyek
+```
+# 🛢️ 6. Arsitektur Database & Relasi
