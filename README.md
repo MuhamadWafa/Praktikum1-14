@@ -6,7 +6,6 @@
 # Pemograman Web 2
 # Agung Nugroho, S.Kom., M.Kom.
 
-
 # 1. Deskripsi proyek
 Aplikasi Sistem Manajemen Inventaris (E-Inventory) ini dibuat untuk memenuhi tugas UAS mata kuliah Pemrograman Web 2, dengan fokus pada pengelolaan data barang, kategori, supplier, dan stok.
 
