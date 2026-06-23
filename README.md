@@ -70,3 +70,12 @@ Backend CodeIgniter 4 RESTful API
         |
 Database MySQL / MariaDB
 ```
+Alamat Akses Sistem (URL)
+Backend API: 🖥️
+```
+http://localhost:8080
+```
+Frontend : 🖥️
+```
+http://localhost:8080/frontend-spa/#/login
+```
