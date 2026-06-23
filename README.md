@@ -226,7 +226,83 @@ Frontend: 🌐 Akses berkas index.html langsung via path localhost XAMPP di brow
 ## Link Hosting: 🌍  https://errors.infinityfree.net/errors/403/
 
 ## Link Youtube: 🎬  https://youtu.be/D1e6IXLayj4?si=xLWsSdPaCwypgaqU
-# 🏁 14. Kesimpulan & Status Proyek
+
+# 14. Menjalankan Project
+## A. PERSIAPAN
+- XAMPP
+- PHP
+- Composer
+- Browser
+- Visual Studio Code
+## B. MENJALANKAN DATABASE
+- Buka XAMPP Control Panel.
+- Jalankan Apache dan MySQL.
+- Buka phpMyAdmin:
+  ```
+  http://localhost/phpmyadmin
+  ```
+  - Buat Databasenya
+    ```
+    e-inventory
+    ```
+- impor atau jalankan sql
+  python```
+  CREATE DATABASE IF NOT EXISTS e-inventory;
+USE e-inventory;
+
+CREATE TABLE users (
+id INT(11) NOT NULL AUTO_INCREMENT,
+username VARCHAR(50) NOT NULL,
+password VARCHAR(255) NOT NULL,
+token VARCHAR(255) DEFAULT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE kategori (
+id INT(11) NOT NULL AUTO_INCREMENT,
+nama_kategori VARCHAR(100) NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE supplier (
+id INT(11) NOT NULL AUTO_INCREMENT,
+nama_supplier VARCHAR(100) NOT NULL,
+kontak VARCHAR(50) DEFAULT NULL,
+alamat TEXT DEFAULT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE barang (
+id INT(11) NOT NULL AUTO_INCREMENT,
+kategori_id INT(11) NOT NULL,
+supplier_id INT(11) NOT NULL,
+user_id INT(11) NOT NULL,
+kode_barang VARCHAR(20) NOT NULL,
+nama_barang VARCHAR(100) NOT NULL,
+stok INT(11) DEFAULT 0,
+harga INT(11) DEFAULT 0,
+PRIMARY KEY (id),
+CONSTRAINT fk_barang_kategori FOREIGN KEY (kategori_id) REFERENCES kategori (id) ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT fk_barang_supplier FOREIGN KEY (supplier_id) REFERENCES supplier (id) ON DELETE CASCADE ON UPDATE CASCADE,
+CONSTRAINT fk_barang_users FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE histori_stok (
+id INT(11) NOT NULL AUTO_INCREMENT,
+barang_id INT(11) NOT NULL,
+jenis_transaksi ENUM('masuk', 'keluar') NOT NULL,
+jumlah INT(11) NOT NULL,
+keterangan TEXT DEFAULT NULL,
+tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (id),
+CONSTRAINT fk_histori_barang FOREIGN KEY (barang_id) REFERENCES barang (id) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+```
+# 🏁 1. Kesimpulan & Status Proyek
 ```
 Status: ✅ Selesai (100%)
 ```
