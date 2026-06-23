@@ -212,7 +212,7 @@ Pengunjung (Public): 🔓 Hanya bisa melihat Beranda dan halaman Login.
 Administrator: 🔒 Akses penuh ke Dashboard, kontrol CRUD Barang, dan Logout.
 
 # ⚡ 12. Panduan Singkat Instalasi & Menjalankan Proyek
-```
+```PYTHON
 Database: 🏛️ Aktifkan XAMPP (Apache & MySQL) ➔ Buat database uas_web2_inventory ➔ Import struktur tabel & data awal (termasuk enkripsi password admin).
 
 Konfigurasi: ⚙️ Sesuaikan berkas .env pada folder backend-api (set nama DB, username root, dan password kosong).
